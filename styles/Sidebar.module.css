@@ -1,0 +1,48 @@
+.Sidebar {
+  width: 30vw;
+  max-height: 92vh;
+  padding: 0.5rem;
+  background-color: whitesmoke;
+}
+
+.Sidebar > h3 {
+  color: slategray;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.SidebarFilter {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.Places {
+  max-height: 67vh;
+  margin-top: 1rem;
+  overflow-y: scroll;
+}
+
+.Places::-webkit-scrollbar {
+  background-color: whitesmoke;
+  width: 8px;
+}
+
+.Places::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.NoPlaceText {
+  font-size: 15px;
+  font-weight: 500;
+  color: slategray;
+}
+
+@media (max-width: 800px) {
+  .Sidebar {
+    width: 100%;
+    max-height: auto;
+  }
+}

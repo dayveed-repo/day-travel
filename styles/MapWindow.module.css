@@ -1,0 +1,43 @@
+.MapWindow {
+  flex: 1;
+  /* width: 75vw;
+  height: 90vh; */
+  position: relative;
+  z-index: 1;
+}
+
+.PlaceOnMap {
+  height: fit-content;
+  width: 5rem;
+  background-color: white;
+  display: flex;
+  padding: 0.3rem;
+  flex-direction: column;
+  z-index: 2;
+  text-decoration: none;
+  color: darkslategrey;
+}
+
+.PlaceOnMap:hover {
+  z-index: 10;
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.PlaceOnMap > img {
+  object-fit: cover;
+  height: 4rem;
+}
+
+.PlaceOnMap > h4 {
+  font-size: 12px;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 800px) {
+  .MapWindow {
+    min-height: 70rem;
+    height: max-content;
+    flex: none;
+  }
+}

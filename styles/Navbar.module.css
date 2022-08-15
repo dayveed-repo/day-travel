@@ -1,0 +1,35 @@
+.Navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  background-color: #e00072;
+}
+
+.Navbar > h1 {
+  font-size: 20px;
+  margin-right: 1rem;
+  color: white;
+}
+
+.Navbar > p {
+  flex: 1;
+  text-align: center;
+  color: #fc6eff;
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  background-color: #fc92ff;
+  padding: 0 0.3rem;
+  border-radius: 6px;
+}
+
+.SearchBar > input {
+  background: transparent;
+  padding: 0.3rem 0.5rem;
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
