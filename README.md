@@ -1,6 +1,6 @@
-### Day Travel App
+# Day Travel App
 
-# This is a Next js application that allows users to find a Restaurant, Hotel and Attractions that suites them
+##### This is a Next js application that allows users to find a Restaurant, Hotel and Attractions that suites them
 
 ## Tools and Technologies used
 
@@ -9,4 +9,4 @@
 - Google Map Api and Google Map For react
 - RapidApi(Travel Advisor Api)
 
-#See it Live 🔥👉
+### See it Live 🔥👉 https://day-travel.netlify.app/
