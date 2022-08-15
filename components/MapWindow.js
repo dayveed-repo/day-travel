@@ -36,6 +36,7 @@ function MapWindow({
           if (!place.name) return;
           return (
             <div
+              key={i}
               onClick={() => handleClick(i)}
               className={styles.PlaceOnMap}
               lat={Number(place.latitude)}

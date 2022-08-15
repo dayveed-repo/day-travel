@@ -41,6 +41,7 @@ function Sidebar({
           places.map((item, i) => {
             return (
               <Place
+                key={i}
                 place={item}
                 selected={Number(childclicked) === i}
                 refProp={placeRefs[i]}

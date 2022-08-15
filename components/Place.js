@@ -69,10 +69,20 @@ function Place({ place, refProp }) {
       </div>
 
       <div className={styles.PlaceBtns}>
-        <a href={`${place.web_url}`} target="_blank" className={styles.Btn}>
+        <a
+          href={`${place.web_url}`}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.Btn}
+        >
           Travel Advisor
         </a>
-        <a href={`${place.website}`} target="_blank" className={styles.Link}>
+        <a
+          href={`${place.website}`}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.Link}
+        >
           Website
         </a>
       </div>
