@@ -20,8 +20,8 @@ function Place({ place, refProp }) {
       {place?.rating && (
         <div className={styles.PlaceCategory}>
           <div>
-            {[...Array(Number.parseInt(place?.rating))].map((star) => (
-              <BsStarFill color="orange" />
+            {[...Array(Number.parseInt(place?.rating))].map((star, i) => (
+              <BsStarFill color="orange" key={i} />
             ))}
           </div>
 
@@ -40,9 +40,9 @@ function Place({ place, refProp }) {
       </div>
 
       <div>
-        {place.awards?.map((award) => {
+        {place.awards?.map((award, i) => {
           return (
-            <div className={styles.PlaceCategory}>
+            <div key={i} className={styles.PlaceCategory}>
               <AiFillSafetyCertificate className={styles.Icon} />
               <p>
                 {award.award_type} {award.year}
@@ -53,8 +53,12 @@ function Place({ place, refProp }) {
       </div>
 
       <div className={styles.CuisineContainer}>
-        {place?.cuisine?.map((cuisine) => {
-          return <p className={styles.Cuisine}>{cuisine.name}</p>;
+        {place?.cuisine?.map((cuisine, i) => {
+          return (
+            <p key={i} className={styles.Cuisine}>
+              {cuisine.name}
+            </p>
+          );
         })}
       </div>
 

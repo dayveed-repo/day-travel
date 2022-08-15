@@ -54,8 +54,8 @@ function MapWindow({
 
               {place?.rating && (
                 <div>
-                  {[...Array(Number.parseInt(place?.rating))].map((star) => (
-                    <BsStarFill color="orange" />
+                  {[...Array(Number.parseInt(place?.rating))].map((star, i) => (
+                    <BsStarFill key={i} color="orange" />
                   ))}
                 </div>
               )}
